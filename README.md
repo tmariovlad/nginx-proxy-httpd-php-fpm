@@ -68,20 +68,23 @@ nano /etc/apache2/ports.conf
 	Listen 444
 
 nano /etc/apache2/sites-available/nume.getdisplaywall.com.conf
+```
 	<VirtualHost *:80>
 	->
 	<VirtualHost *:81>
-	
+```	
 nano /etc/apache2/sites-available/000-default.conf
+```
 	<VirtualHost *:80>
 	->
 	<VirtualHost *:81>
-
+```
 nano /etc/apache2/sites-available/default-ssl.conf
+```
 	<VirtualHost _default_:443>
 	->
 	<VirtualHost _default_:444>
-
+```
 ## restart apache to load the new changes
 service apache2 restart
 
